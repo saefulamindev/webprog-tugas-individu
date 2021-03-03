@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>KSR PMI Unit UNJ</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="fontawesome5.6.3/css/all.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="animated fadeIn">
+
+  <!-- Navbar -->
+  <!--Main Navigation-->
+  <header>
+    <!--Main Navigation-->
+    <header>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="index.html">KSR PMI Unit UNJ</a>
+          <!-- Collapse button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="basicExampleNav">
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto smooth-scroll">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Aktivitas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Berita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Donasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontak Kami</a>
+              </li>
+            </ul>
+            <!-- Links -->
+          </div>
+          <!-- Collapsible content -->
+        </div>
+      </nav>
+      <!--/.Navbar-->
+      <!--Mask-->
+      <div id="intro" class="view">
+        <div class="mask rgba-black-strong">
+          <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+            <div class="row d-flex justify-content-between align-items-center text-center">
+              <div class="col-7">
+                <!-- Heading -->
+                <h3 class="display-4 text-left white-text pt-5 mb-2">Ayo Jadi Relawan</h3>
+                <!-- Divider -->
+                <hr class="hr-light">
+                <!-- Description -->
+                <h4 class="white-text text-left my-4">Penerimaan Calon Anggota Baru KRS PMI Unit UNJ Tahun 2019 telah
+                  dibuka.</h4>
+                <button type="button" class="float-left btn btn-outline-white">Baca selengkapnya<i class="align-left fas fa-book ml-2"></i></button>
+                <div class="input-group md-form form-sm form-2 pl-0">
+                </div>
+              </div>
+              <div class="animated col-4 " id="masuk">
+                <!-- Masuk -->
+                <!-- Default form login -->
+                <form class="text-center border border-light p-5">
+                  <p class="h4 mb-4 text-white">Masuk</p>
+                  <!-- Email -->
+                  <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Username">
+                  <!-- Password -->
+                  <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <!-- Remember me -->
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                        <label class="custom-control-label text-white" for="defaultLoginFormRemember">Ingat Saya</label>
+                      </div>
+                    </div>
+                    <div class="text-left">
+                      <!-- Forgot password -->
+                      <a href="">Lupa Password?</a>
+                    </div>
+                  </div>
+                  <!-- Sign in button -->
+                  <button class="btn btn-info btn-block my-4" type="submit" text-white>Masuk</button>
+                  <!-- Register -->
+                  <p class="text-white">Belum punya akun?
+                    <a href="#daftar" id="tomboldaftar">Daftar</a>
+                  </p>
+                </form>
+              </div>
+              <div class="animated col-4 d-none" id="daftar">
+                <!-- Default form register -->
+                <form class="text-center border border-light py-2 px-5 bg-transparent">
+                  <p class="h4 mb-2 text-white">Daftar</p>
+                  <div class="form-row mb-3">
+                    <div class="col">
+                      <!-- Username -->
+                      <input type="text" id="inputName" onkeyup="validateName()" class="form-control" placeholder="Username">
+                      <small id="errorName" class="form-text text-left mb-1">
+                      </small>
+                    </div>
+                    <div class="col">
+                      <!-- Password -->
+                      <input type="password" id="inputPassword" onkeyup="validatePassword()" class="form-control"
+                        placeholder="Password">
+                      <small id="errorPassword" class="form-text text-left mb-1">
+                      </small>
+                    </div>
+                  </div>
+                  <!-- Nama Lengkap -->
+                  <input type="text" id="inputNamaLengkap" onkeyup="validateNamaLengkap()" class="form-control"
+                    placeholder="Nama Lengkap">
+                  <small id="errorNamaLengkap" class="form-text text-left mb-4">
+                  </small>
+                  <!-- Tahun Lulus -->
+                  <input maxlength="4" type="text" id="inputTahunLulus" onkeyup="validateTahunLulus()" class="form-control"
+                    placeholder="Tahun Lulus">
+                  <small id="errorTahunLulus" class="form-text text-left mb-4">
+                  </small>
+                  <!-- Alamat -->
+                  <input type="text" id="inputAlamat" onkeyup="validateAlamat()" class="form-control" placeholder="Alamat">
+                  <small id="errorAlamat" class="form-text text-left mb-4">
+                  </small>
+                  <!-- Alasan menjadi anggota -->
+                  <textarea id="inputAlasan" onkeyup="validateAlasan()" class="form-control" placeholder="Alasan menjadi anggota"></textarea>
+                  <small id="errorAlasan" class="form-text text-left mb-4">
+                  </small>
+                  <!-- Sign up button -->
+                  <button class="btn btn-info my-1 btn-block text-white" onclick="validateAll()" id="Confirm" type="button">Daftar</button>
+                  <hr>
+                  <!-- Terms of service -->
+                  <p class="my-1 text-white">Dengan mengklik
+                    <em class="text-white">Daftar</em> Anda menyetujui
+                    <a href="" target="_blank"><br>Ketentuan, Kebijakan Data dan Kebijakan Cookie
+                      kami</a>
+                </form>
+                <!-- Default form register -->
+              </div>
+            </div>
+          </div>
+          <div class="fixed-bottom footer-copyright text-white text-center py-3"><b>© 2019 Copyright by M Saeful Amin</b>
+          </div>
+        </div>
+        <!--/.Mask-->
+    </header>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Sweet Alert JS -->
+    <script type="text/javascript" src="js/sweetalert.min.js"></script>
+    <!-- My JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#tomboldaftar").click(function () {
+          $("#masuk").addClass("slower");
+          $("#masuk").addClass("fadeOut");
+          $("#masuk").addClass("d-none");
+          $("#daftar").addClass("slow");
+          $("#daftar").addClass("fadeIn");
+          $("#daftar").removeClass("d-none");
+        });
+      });
+      $("#Confirm").click(function () {
+        var temp = validateAll();
+        if (temp == true) {
+          swal({
+            title: "Berhasil Mendaftar!",
+            icon: "success",
+            button: "Oke",
+          });
+        } else {
+          swal({
+            title: "Ups!",
+            text: "Periksa kembali form, pastikan semua data terisi dengan benar!",
+            icon: "error",
+            button: "Oke",
+          });
+        }
+      });
+    </script>
+</body>
+
+</html>

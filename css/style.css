@@ -1,0 +1,49 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("../img/bg-image.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.top-nav-collapse {
+    background-color: #24355C;
+  }
+  @media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  }
+
+  /* Tombol Cari */
+  .input-group.md-form.form-sm.form-1 input{
+    border: 1px solid #bdbdbd;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input {
+    border: 1px solid #bdbdbd;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input.red-border  {
+    border: 1px solid #ef9a9a;
+}
+.input-group.md-form.form-sm.form-2 input.lime-border  {
+    border: 1px solid #cddc39;
+}
+.input-group.md-form.form-sm.form-2 input.amber-border  {
+    border: 1px solid #ffca28;
+}
